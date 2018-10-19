@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* =============== RESET =============== */
+@import url('reset.css');
+
+/* =============== FONTS =============== */
+@import url('fonts.css');
+
+/* =============== ICONS =============== */ 
+@import url('icon.css');
+
+
+/* =============== GENERAL =============== */
+:root {
+	--fontSize: 15px;
+	--darkColor: #14171e;
+	--lightColor: #818F9B;
+	--primeColor: #e94b3d;
+	--primeColorActive: #dd4234;
+	--subColor: #00B5C5;
+}
+
+@custom-media --xs-viewport (max-width: 767px);
+@custom-media --sm-viewport (max-width: 991px);
+@custom-media --md-viewport (max-width: 1199px);
+ 
+@media (--xs-viewport) {
+  	:root {
+		--fontSize: 14px;
+	}
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	font-size: var(--fontSize);
+	font-weight: 400;
+	color: var(--darkColor);
+}
+
+a {
+	color: var(--primeColor);
+	transition: all .2s linear;
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--primeColor);
+		text-decoration: none;
+	}
+}
+
+
+
+/* =============== BLOCKS =============== */
+
+/* form-base */
+::-webkit-input-placeholder { color: var(--lightColor); }
+::-moz-placeholder          { color: var(--lightColor); }
+:-moz-placeholder           { color: var(--lightColor); }
+:-ms-input-placeholder      { color: var(--lightColor); }
+
+
+
+/* =============== MODULES =============== */
+
+/* header */
+@import url('../modules/header/header.css');
+
+/* footer */
+@import url('../modules/footer/footer.css');
+

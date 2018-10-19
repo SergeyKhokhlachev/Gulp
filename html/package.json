@@ -1,0 +1,28 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "Simple progect build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Khokhlachev",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssimport": "^6.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-assets": "^5.0.0",
+    "postcss-custom-media": "^7.0.6",
+    "postcss-custom-properties": "^8.0.8",
+    "postcss-nested": "^4.1.0"
+  }
+}
